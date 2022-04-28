@@ -1,3 +1,4 @@
+
 #include<iostream>
 #include<map>
 #include<list>
@@ -5,53 +6,6 @@
 
 using namespace std;
 
-//using map
-/*
-map<int,list<int>> l;
-
-void addEdge(int x,int y){
-    l[x].push_back(y);
-    l[y].push_back(x);
-}
-
-void bfs(int src){
-    map<int,int> visited;
-    queue<int> q;
-
-    q.push(src);
-    visited[src]=true;
-
-    while(!q.empty()){
-        int node = q.front();
-        q.pop();
-        cout<<node<<" ";
-        for(int nbr : l[node]){
-            if(!visited[nbr]){
-                q.push(nbr);
-                //mark that neighbor as visited
-                visited[nbr] = true;
-            }
-        }
-    }
-}
-
-
-
-int main(){
-    int u,v,n;
-    cout<<"Enter the no of edges : ";
-    cin>>n;
-    for(int i=0;i<n;i++){
-        cin>>u>>v;
-        addEdge(u,v);
-    }
-    int src;
-    cout<<"Enter  the source :";
-    cin>>src;
-    bfs(src);
-return 0;
-}
-*/
 
 // using vector
 
@@ -71,8 +25,8 @@ void printGraph(vector<int>adj_list[], int v){
 }
 
 
-void bfs(vector<int>adj_list[],int v,int src){
-    vector<bool> visited(v+1,false);
+void bfs(vector<int>adj_list[],int src,vector<bool> &visited){
+
     queue<int> q;
 
     q.push(src);
@@ -92,6 +46,18 @@ void bfs(vector<int>adj_list[],int v,int src){
     }
 }
 
+void BFS_dist(vector<int>adj_list[],int v, int src){
+    vector<bool> visited(v+1,false);
+    int cnt=0;
+    for(int i=0;i<v;i++){
+        if(!visited[i]){
+            bfs(adj_list,i,visited);
+            cnt+=1;
+        }
+    }
+    cout<<"\nNo of Dis-continuous graphs :"<<cnt<<endl;
+
+}
 
 int main(){
     int ver,u,v;
@@ -111,7 +77,7 @@ int main(){
     int src;
     cout<<"Enter  the source :";
     cin>>src;
-    bfs(adj_list,ver,src);
+    BFS_dist(adj_list,ver,src);
 
 
 return 0;
