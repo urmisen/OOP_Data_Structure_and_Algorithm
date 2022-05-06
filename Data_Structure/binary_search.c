@@ -1,18 +1,46 @@
-int binary_search(int arr[],int left,int right, int x){
-    if(right>1){
-        mid=left+right/2
+#include<stdio.h>
 
-        if(arr[mid]==x)
-            return mid
-        if(arr[mid]<x){
-            left=mid+1
+int linearSearch(int arr[], int size, int element){
+    for (int i = 0; i < size; i++)
+    {
+        if(arr[i]==element){
+            return i;
         }
-        if(arr[mid]>x){
-            right=mid-1
-        }
-        return binary_Search(arr[], left, right, x);
     }
+    return -1;
+}
 
-    return -1
+int binarySearch(int arr[], int size, int element){
+    int low, mid, high;
+    low = 0;
+    high = size-1;
+    // Keep searching until low <= high
+    while(low<=high){
+        mid = (low + high)/2;
+        if(arr[mid] == element){
+            return mid;
+        }
+        if(arr[mid]<element){
+            low = mid+1;
+        }
+        else{
+            high = mid -1;
+        }
+    }
+    return -1;
 
+}
+
+int main(){
+    // Unsorted array for linear search
+    // int arr[] = {1,3,5,56,4,3,23,5,4,54634,56,34};
+    // int size = sizeof(arr)/sizeof(int);
+
+    // Sorted array for binary search
+    int arr[] = {5};
+    int size = sizeof(arr)/sizeof(int);
+    int element = 5;
+    int searchIndex = binarySearch(arr, size, element);
+    printf("The element %d was found at index %d \n", element, searchIndex);
+    return 0;
 }

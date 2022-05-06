@@ -30,11 +30,9 @@ vector<vector<string>> groupAnagrams(vector<string>& strs) {
         vector<vector<string>>temp;
         temp=groupAnagrams(vect);
         for (int i = 0; i < temp.size(); i++) {
-        for (
-            auto it = temp[i].begin();
-            it != temp[i].end(); it++)
-            cout << *it << " ";
-        cout << endl;
+            for (auto it = temp[i].begin();it != temp[i].end(); it++)
+                cout << *it << " ";
+            cout << endl;
     }
 
     return 0;
