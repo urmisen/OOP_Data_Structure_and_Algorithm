@@ -28,46 +28,41 @@ void createVerticalList(struct node **head, int arr[], int n)
 
 struct node* sortedMerge(struct node* a, struct node* b)
 {
-    // base cases
-    if (a == NULL) {
-        return b;
+    struct node* p3 =  new node();
+    struct node* p1=a;
+    struct node* p2=b;
+    struct node* dummy =p3;
+
+    while( p1!= NULL && p2!= NULL){
+         if(p1->data < p2->data){
+            p3->bottom = p1;
+            p1=p1->bottom;
+         }
+
+         else{
+            p3->bottom = p2;
+            p2=p2->bottom;
+         }
+         p3=p3->bottom;
     }
 
-    else if (b == NULL) {
-        return a;
-    }
-
-    struct node* result = NULL;
-
-    // pick either `a` or `b`, and recur
-    if (a->data <= b->data)
-    {
-        result = a;
-        result->bottom = sortedMerge(a->bottom, b);
-    }
-    else {
-        result = b;
-        result->bottom = sortedMerge(a, b->bottom);
-    }
-
-    return result;
+    if(p1) p3 ->bottom = p1;
+    else p3 -> bottom =  p2;
+    return dummy->bottom;
 }
 
 // Recursive function to flatten and sort a given list
 struct node* flatten(struct node* head)
 {
-    // base case: an empty list
-    if (head == NULL) {
+    if(head == NULL || head->next == NULL){
         return head;
     }
 
-    // Merge this list with the list on the right side
-    struct node* sorted = sortedMerge(head, flatten(head->next));
+    head->next = flatten(head->next);
 
-    // set next link to NULL after flattening
-    head->next = NULL;
+    head = sortedMerge(head,head->next);
 
-    return sorted;
+    return head;
 }
 void traversal(struct node *ptr)
 {

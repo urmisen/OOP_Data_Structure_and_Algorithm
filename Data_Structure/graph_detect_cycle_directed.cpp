@@ -62,8 +62,6 @@ int main(){
     cout<<"Adjacent list :"<<endl;
     printGraph(adj_list,ver);
 
-    cout<<"Enter the source vertex :";
-    cin>>src;
 
     int ans=isCyclic(ver, adj_list);
 

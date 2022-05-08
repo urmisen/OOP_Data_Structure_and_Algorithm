@@ -7,7 +7,7 @@ using namespace std;
 
 int findJudge(int n, vector<vector<int>>& trust) {
 
-        vector<int> data(n+1,0);
+        vector<int> data(n,0);
         for(auto x:trust){
             data[x[0]]--;
             data[x[1]]++;
@@ -21,8 +21,6 @@ int findJudge(int n, vector<vector<int>>& trust) {
         return -1;
 
     }
-
-
 
 int main(){
 

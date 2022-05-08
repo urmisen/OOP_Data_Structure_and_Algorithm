@@ -47,8 +47,9 @@ class Solution
 	                if(nx == tx && ny == ty) return ans;
 
 	                if(isValid(nx, ny, n, visited)){
-	                    visited[nx][ny] = true;
+
 	                    q.push({nx, ny});
+	                    visited[nx][ny] = true;
 	                }
 	            }
 

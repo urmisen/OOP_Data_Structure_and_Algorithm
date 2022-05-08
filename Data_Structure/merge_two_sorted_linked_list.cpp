@@ -1,4 +1,4 @@
-#include<iostream>
+ #include<iostream>
 #include<stdio.h>
 using namespace std;
 
@@ -73,6 +73,9 @@ struct node* Merge(struct node *a, struct node *b){
     return dummy->next;
 }
 
+//Time complexity - O(n+m)
+//space complexity - O(n+m)
+
 struct node* Merge_order_one(struct node *l1, struct node *l2){
     struct node* result;
     if(l1==NULL){
@@ -102,7 +105,8 @@ struct node* Merge_order_one(struct node *l1, struct node *l2){
     }
     return result;
 }
-
+//Time complexity - O(n+m)
+//space complexity - O(1)
 int main(){
     struct node *res=NULL;
     struct node *a=NULL;

@@ -2,15 +2,15 @@
 #include<vector>
 #include<climits>
 #include<algorithm>
-#include<queue>
+#include<stack>
 
 #define inf INT_MAX;
 using namespace std;
 
-stack<int>st;
+
 void addEdge(vector<int>adj[],int u,int v,vector<int>weight[],int wt) {
     adj[u].push_back(v);
-    weight[u].push_back(v) = wt;
+    weight[u][v] = wt;
 }
 
 void printGraph(vector<int>adj_list[],int v){
@@ -22,42 +22,60 @@ void printGraph(vector<int>adj_list[],int v){
     }
 }
 
-void DFSrec(vector<int> adj, int u, vector<bool> &visited, stack<int>& stk)
-{
-   visited[u] = true;
-   for( auto i : adj[u])
-   {
-     if(visited[i] == false)
-       {
-         DFSrec(adj,i,visited,stk)
-       }
-    }
-    stk.push(u);
- }
+void DFSRec(int s, stack<int>&st, vector<bool>&visited, vector<int> adj[]){
+	    visited[s] = true;
+
+	    for(auto v: adj[s]){
+	        if(!visited[v]){
+	            DFSRec(v, st, visited, adj);
+	        }
+	    }
+
+	    st.push(s);
+	}
 
 
-void topological(vector<int> adj[], int v)
-{
-  vector<bool> visited(v,false);
-  stack<int> stk;
-  for(int i=0;i<v;i++)
-  {
-    if(visited[i]==false)
-      {
-        DFSrec(adj,i,visited,stk);
-      }
-   }
-}
+vector<int> topoSort(int V, vector<int> adj[])
+	{
+	    // code here
+	    stack<int>st;
+	    vector<bool>visited(V, false);
 
-vector<int> shortestpath(vector<int> adj, stack<int>& stk, int source)
+	    for(int i=0; i<V; i++){
+	        if(!visited[i]){
+	            DFSRec(i, st, visited, adj);
+	        }
+	    }
+
+	    vector<int>ans;
+	    while(!st.empty()){
+	        int x = st.top();
+	        st.pop();
+	        ans.push_back(x);
+	    }
+
+	    return ans;
+
+	}
+
+vector<int> shortestpath(vector<int> adj, int source,int V)
 {
   int v = adj.size();
   vector<int> dist(v,INT_MAX);
   dist[source] = 0;
 
-  while(stk.empty() != true)
+  stack<int>st;
+  vector<bool>visited(V, false);
+
+  for(int i=0; i<V; i++){
+     if(!visited[i]){
+         DFSRec(i, st, visited, adj);
+	        }
+	    }
+
+  while(st.empty() != true)
   {
-    int u = stk.top();
+    int u = st.top();
     stk.pop();
     for(auto i: adj[u])
     {
@@ -80,7 +98,14 @@ int main(){
     cin>>n;
     int u,v,wt;
     vector<int>adj_list[ver];
-    vector<int>weight[ver];
+    vector<vector<int>> weight;
+    stack<int>st;
+    for(int i=0;i<ver;i++){
+        for(int j=0;j<ver;j++){
+            weight[i]]j]=0;
+        }
+    }
+
     for(int i=0;i<n;i++){
         cin>>u>>v>>wt;
         addEdge(adj_list,u,v,weight,wt);
@@ -88,8 +113,9 @@ int main(){
     cout<<"Adjacency list : ";
     printGraph(adj_list,ver);
     cout<<"Topological Sort : "<<endl;
-    topoSort(adj_list,ver);
+    shortestpath(adj_list,0,ver);
 
+    //shortestpath(adj_list,stk,0);
 
 return 0;
 }

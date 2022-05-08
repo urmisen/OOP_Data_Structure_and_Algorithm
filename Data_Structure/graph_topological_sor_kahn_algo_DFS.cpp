@@ -21,8 +21,7 @@ void printGraph(vector<int>adj_list[],int v){
 void DFSRec(int s, stack<int>&st, vector<bool>&visited, vector<int> adj[]){
 	    visited[s] = true;
 
-	    vector<int>data = adj[s];
-	    for(auto v: data){
+	    for(auto v: adj[s]){
 	        if(!visited[v]){
 	            DFSRec(v, st, visited, adj);
 	        }

@@ -24,6 +24,7 @@ void build(int ans[1121][15],vector<int> prime,int Pt) {
 }
 int main(){
     int n, k;
+
     while(scanf("%d %d", &n, &k)) {
         int ans[1121][15] = {},Pt;
         vector< int > prime;

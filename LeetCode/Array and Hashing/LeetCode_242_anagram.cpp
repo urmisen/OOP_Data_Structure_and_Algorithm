@@ -47,7 +47,7 @@ bool areAnagram(string str1, string str2)
     sort(str2.begin(), str2.end());
 
     for(int i=0;i<l1;i++){
-        if(str1[i]!=str[i])
+        if(str1[i]!=str2[i])
             return false;
     }
 

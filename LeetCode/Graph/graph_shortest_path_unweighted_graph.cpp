@@ -42,7 +42,7 @@ void bfs_Rec(vector<int>adj_list[],int src, vector<bool>&visited,vector<int>&dis
 vector<int> bfs(vector<int>adj_list[],int src,int v){
 
     vector<bool>visited(v+1,false);
-    vector<int>dist(v,0);
+    vector<int>dist(v,INT_MAX);
     for(int i=0;i<v;i++){
         if(!visited[i]){
             bfs_Rec(adj_list,i,visited,dist);
