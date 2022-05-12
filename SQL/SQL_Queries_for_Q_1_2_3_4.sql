@@ -1,5 +1,5 @@
 -- 1) How to find duplicate value in SQL?
-SELECT OrderID,CustomerID,EmployeeID,OrderDate,ShipperID, COUNT( * )
+SELECT CustomerID, COUNT( * )
 FROM order_table
 GROUP BY CustomerID
 HAVING COUNT( * ) >1;
