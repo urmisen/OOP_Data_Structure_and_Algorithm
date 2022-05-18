@@ -1,12 +1,12 @@
 #include<iostream>
 #include<vector>
 #include<stack>
-
-
 using namespace std;
 void addEdge(vector<int> adj_list[],int u,int v){
     adj_list[u].push_back(v);
 }
+
+
 
 void printGraph(vector<int>adj_list[],int v){
     for(int i=0;i<v;i++){
