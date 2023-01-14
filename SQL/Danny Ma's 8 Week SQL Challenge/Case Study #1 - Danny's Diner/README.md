@@ -1,4 +1,4 @@
-# DeepGlut
+# Day-1
 ![Author](https://img.shields.io/badge/author-urmisen-orange)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/urmisen/Thesis)
 [![Stars](https://img.shields.io/github/stars/urmisen/Thesis.svg?style=social)](https://github.com/urmisen/Thesis/stargazers)
@@ -15,8 +15,8 @@ Email: urmisen1202@gmail.com <br>
 ## Case Study #1 - Danny's Diner
 This study is about the Post Translational Modifications(PTM) about proteins. Here we are  trying to identify Acetylation sites in proteins, where Acetylation is a kind of Lysine Post Translational Modifications. This is the code repository of my paper entitled "DeepGlut: A Deep Learning Framework for Prediction of Glutarylation Sites in Proteins".
 
-## Aurhos
-Urmi Sen
+## Owner
+Danny Ma
 
 <img src="https://github.com/urmisen/OOP_Data_Structure_and_Algorithm/blob/main/SQL/Danny%20Ma's%208%20Week%20SQL%20Challenge/Case%20Study%20%231%20-%20Danny's%20Diner/case_1.PNG" alt="alt text" width="380" height="260">
 ## Introduction
