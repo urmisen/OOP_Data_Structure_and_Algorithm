@@ -18,7 +18,7 @@ This study is about the Post Translational Modifications(PTM) about proteins. He
 ## Owner
 Danny Ma
 
-<img src="https://github.com/urmisen/OOP_Data_Structure_and_Algorithm/blob/main/SQL/Danny%20Ma's%208%20Week%20SQL%20Challenge/Case%20Study%20%231%20-%20Danny's%20Diner/case_1.PNG" alt="alt text" width="380" height="260">
+<img src="https://github.com/urmisen/OOP_Data_Structure_and_Algorithm/blob/main/SQL/Danny%20Ma's%208%20Week%20SQL%20Challenge/Case%20Study%20%231%20-%20Danny's%20Diner/case_1.PNG" alt="alt text" width="600" height="800">
 ## Introduction
 
 Danny seriously loves Japanese food so in the beginning of 2021, he decides to embark upon a risky venture and opens up a cute little restaurant that sells his 3 favourite foods: sushi, curry and ramen.
@@ -40,7 +40,7 @@ Danny has shared with you 3 key datasets for this case study:
 You can inspect the entity relationship diagram and example data below.
 
 ### Entity Relationship Diagram
-<img src="https://github.com/urmisen/OOP_Data_Structure_and_Algorithm/blob/main/SQL/Danny%20Ma's%208%20Week%20SQL%20Challenge/Case%20Study%20%231%20-%20Danny's%20Diner/ER_diagram.PNG" alt="alt text" width="350" height="300">
+<img src="https://github.com/urmisen/OOP_Data_Structure_and_Algorithm/blob/main/SQL/Danny%20Ma's%208%20Week%20SQL%20Challenge/Case%20Study%20%231%20-%20Danny's%20Diner/ER_diagram.PNG" alt="alt text" width="450" height="300">
 
 ### Example Datasets
 All datasets exist within the dannys_diner database schema - be sure to include this reference within your SQL scripts as you start exploring the data and answering the case study questions.
