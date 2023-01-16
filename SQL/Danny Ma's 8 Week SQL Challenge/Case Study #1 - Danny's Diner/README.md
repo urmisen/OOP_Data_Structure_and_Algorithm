@@ -15,19 +15,15 @@ Email: urmisen1202@gmail.com <br>
 ## Case Study #1 - Danny's Diner
 This study is about the Post Translational Modifications(PTM) about proteins. Here we are  trying to identify Acetylation sites in proteins, where Acetylation is a kind of Lysine Post Translational Modifications. This is the code repository of my paper entitled "DeepGlut: A Deep Learning Framework for Prediction of Glutarylation Sites in Proteins".
 
-## Owner
-Danny Ma
-
+## Challenge By : Danny Ma
 <img src="https://github.com/urmisen/OOP_Data_Structure_and_Algorithm/blob/main/SQL/Danny%20Ma's%208%20Week%20SQL%20Challenge/Case%20Study%20%231%20-%20Danny's%20Diner/case_1.PNG" alt="alt text" width="600" height="700">
 
 ## Introduction
-
 Danny seriously loves Japanese food so in the beginning of 2021, he decides to embark upon a risky venture and opens up a cute little restaurant that sells his 3 favourite foods: sushi, curry and ramen.
 
 Danny’s Diner is in need of your assistance to help the restaurant stay afloat - the restaurant has captured some very basic data from their few months of operation but have no idea how to use their data to help them run the business.
 
 ## Problem Statement
-
 Danny wants to use the data to answer a few simple questions about his customers, especially about their visiting patterns, how much money they’ve spent and also which menu items are their favourite. Having this deeper connection with his customers will help him deliver a better and more personalised experience for his loyal customers.
 
 He plans on using these insights to help him decide whether he should expand the existing customer loyalty program - additionally he needs help to generate some basic datasets so his team can easily inspect the data without needing to use SQL.
@@ -88,7 +84,6 @@ The final members table captures the join_date when a customer_id joined the bet
 
 
 ## Case Study Questions
-
 Each of the following case study questions can be answered using a single SQL statement:
 
 1. What is the total amount each customer spent at the restaurant?
@@ -103,7 +98,6 @@ Each of the following case study questions can be answered using a single SQL st
 10. In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?
 
 ## Answer:
-
 I have used PostgreSQL as the programming language and these are the functions that get used
 * Aggregate functions — SUM, MIN, MAX
 * Windows function - OVER(), DENSE_RANK()
@@ -128,7 +122,6 @@ I have used PostgreSQL as the programming language and these are the functions t
 https://8weeksqlchallenge.com/case-study-1/ </br>
 
 ## License
-
 All code in this repository is copyright 2023. All Rights Reserved.
 
 Licensed under the MIT License. You may not use this file except in compliance with the License. Use and/or modification of this code outside of this repository must reference:
