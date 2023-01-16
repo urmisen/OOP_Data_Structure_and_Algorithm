@@ -104,7 +104,7 @@ Each of the following case study questions can be answered using a single SQL st
 
 ## Answer:
 
-I’m have used PostgreSQL as the programming language and these are the functions that get used
+I have used PostgreSQL as the programming language and these are the functions that get used
 * Aggregate functions — SUM, MIN, MAX
 * Windows function - OVER(), DENSE_RANK()
 * Joins — INNER JOIN/JOIN, LEFT JOIN
@@ -122,6 +122,7 @@ I’m have used PostgreSQL as the programming language and these are the functio
 9. https://github.com/urmisen/OOP_Data_Structure_and_Algorithm/blob/main/SQL/Danny%20Ma's%208%20Week%20SQL%20Challenge/Case%20Study%20%231%20-%20Danny's%20Diner/9_customer_wise_points.sql
 10. https://github.com/urmisen/OOP_Data_Structure_and_Algorithm/blob/main/SQL/Danny%20Ma's%208%20Week%20SQL%20Challenge/Case%20Study%20%231%20-%20Danny's%20Diner/10_total_point_after_being_member.sql
 
+* All Question's Solution In One Script : https://github.com/urmisen/OOP_Data_Structure_and_Algorithm/blob/main/SQL/Danny%20Ma's%208%20Week%20SQL%20Challenge/Case%20Study%20%231%20-%20Danny's%20Diner/script.sql
 
 ## Case Stydy Link
 https://8weeksqlchallenge.com/case-study-1/ </br>
