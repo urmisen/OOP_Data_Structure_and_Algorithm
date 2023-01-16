@@ -12,12 +12,13 @@ Email: urmisen1202@gmail.com <br>
 
 <hr>
 
+## SQL Challenge By : Danny Ma
+
 ## Case Study #1 - Danny's Diner
 Thank you Danny Ma for the excellent case study! You can find it in the link below and try it by yourself.
 * Link : https://8weeksqlchallenge.com/case-study-1/ </br>
 
-## Challenge By : Danny Ma
-<img src="https://github.com/urmisen/OOP_Data_Structure_and_Algorithm/blob/main/SQL/Danny%20Ma's%208%20Week%20SQL%20Challenge/Case%20Study%20%231%20-%20Danny's%20Diner/case_1.PNG" alt="alt text" width="600" height="700">
+<img src="https://github.com/urmisen/OOP_Data_Structure_and_Algorithm/blob/main/SQL/Danny%20Ma's%208%20Week%20SQL%20Challenge/Case%20Study%20%231%20-%20Danny's%20Diner/case_1.PNG" alt="alt text" width="600" height="620">
 
 ## Introduction
 Danny seriously loves Japanese food so in the beginning of 2021, he decides to embark upon a risky venture and opens up a cute little restaurant that sells his 3 favourite foods: sushi, curry and ramen.
@@ -119,8 +120,6 @@ I have used PostgreSQL as the programming language and these are the functions t
 
 * All Question's Solution In One Script : https://github.com/urmisen/OOP_Data_Structure_and_Algorithm/blob/main/SQL/Danny%20Ma's%208%20Week%20SQL%20Challenge/Case%20Study%20%231%20-%20Danny's%20Diner/script.sql
 
-## Thank You...!
-
 
 ## License
 All code in this repository is copyright 2023. All Rights Reserved.
@@ -129,3 +128,5 @@ Licensed under the MIT License. You may not use this file except in compliance w
 
 ## Conclusion:
 If you like this repository and please put a star. This will keep me motivated to work more on these. 
+
+## Thank You...!
