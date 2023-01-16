@@ -18,7 +18,7 @@ This study is about the Post Translational Modifications(PTM) about proteins. He
 ## Owner
 Danny Ma
 
-<img src="https://github.com/urmisen/OOP_Data_Structure_and_Algorithm/blob/main/SQL/Danny%20Ma's%208%20Week%20SQL%20Challenge/Case%20Study%20%231%20-%20Danny's%20Diner/case_1.PNG" alt="alt text" width="600" height="800">
+<img src="https://github.com/urmisen/OOP_Data_Structure_and_Algorithm/blob/main/SQL/Danny%20Ma's%208%20Week%20SQL%20Challenge/Case%20Study%20%231%20-%20Danny's%20Diner/case_1.PNG" alt="alt text" width="600" height="700">
 ## Introduction
 
 Danny seriously loves Japanese food so in the beginning of 2021, he decides to embark upon a risky venture and opens up a cute little restaurant that sells his 3 favourite foods: sushi, curry and ramen.
@@ -106,7 +106,7 @@ I’m have used PostgreSQL as the programming language and these are the functio
 * Aggregate functions — SUM, MIN, MAX
 * Windows function - OVER(), DENSE_RANK()
 * Joins — INNER JOIN/JOIN, LEFT JOIN
-* Common Table Expression (CTE)
+* Common Table Expression (CTE), COALESCE()
 
 ## Solutions:
 1. https://github.com/urmisen/OOP_Data_Structure_and_Algorithm/blob/main/SQL/Danny%20Ma's%208%20Week%20SQL%20Challenge/Case%20Study%20%231%20-%20Danny's%20Diner/1_customer_spend.sql
@@ -129,8 +129,6 @@ https://8weeksqlchallenge.com/case-study-1/ </br>
 All code in this repository is copyright 2023. All Rights Reserved.
 
 Licensed under the MIT License. You may not use this file except in compliance with the License. Use and/or modification of this code outside of this repository must reference:
-
-© Case Study #1 - Danny's Diner (Author for this Solutions: Urmi Sen)
 
 ## Conclusion:
 If you like this repository and please put a star. This will keep me motivated to work more on these. 
