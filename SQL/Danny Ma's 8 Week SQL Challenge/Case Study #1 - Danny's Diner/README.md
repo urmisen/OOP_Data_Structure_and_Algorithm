@@ -100,8 +100,25 @@ Each of the following case study questions can be answered using a single SQL st
 9. If each $1 spent equates to 10 points and sushi has a 2x points multiplier - how many points would each customer have?
 10. In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?
 
-## Solutions
+## Answer:
+
+I’m have used PostgreSQL as the programming language and these are the functions that get used
+* Aggregate functions — SUM, MIN, MAX
+* Windows function - OVER(), DENSE_RANK()
+* Joins — INNER JOIN/JOIN, LEFT JOIN
+* Common Table Expression (CTE)
+
+## Solutions:
 1. https://github.com/urmisen/OOP_Data_Structure_and_Algorithm/blob/main/SQL/Danny%20Ma's%208%20Week%20SQL%20Challenge/Case%20Study%20%231%20-%20Danny's%20Diner/1_customer_spend.sql
+2. https://github.com/urmisen/OOP_Data_Structure_and_Algorithm/blob/main/SQL/Danny%20Ma's%208%20Week%20SQL%20Challenge/Case%20Study%20%231%20-%20Danny's%20Diner/2_visitation_day.sql
+3. https://github.com/urmisen/OOP_Data_Structure_and_Algorithm/blob/main/SQL/Danny%20Ma's%208%20Week%20SQL%20Challenge/Case%20Study%20%231%20-%20Danny's%20Diner/3_first_purchased_item.sql
+4. https://github.com/urmisen/OOP_Data_Structure_and_Algorithm/blob/main/SQL/Danny%20Ma's%208%20Week%20SQL%20Challenge/Case%20Study%20%231%20-%20Danny's%20Diner/4_most_purchased_item.sql
+5. https://github.com/urmisen/OOP_Data_Structure_and_Algorithm/blob/main/SQL/Danny%20Ma's%208%20Week%20SQL%20Challenge/Case%20Study%20%231%20-%20Danny's%20Diner/5_most_popular_item_customer_wise.sql
+6. https://github.com/urmisen/OOP_Data_Structure_and_Algorithm/blob/main/SQL/Danny%20Ma's%208%20Week%20SQL%20Challenge/Case%20Study%20%231%20-%20Danny's%20Diner/6_first_purchase_after_joining.sql
+7. https://github.com/urmisen/OOP_Data_Structure_and_Algorithm/blob/main/SQL/Danny%20Ma's%208%20Week%20SQL%20Challenge/Case%20Study%20%231%20-%20Danny's%20Diner/7_last_purchase_before_joining.sql
+8. https://github.com/urmisen/OOP_Data_Structure_and_Algorithm/blob/main/SQL/Danny%20Ma's%208%20Week%20SQL%20Challenge/Case%20Study%20%231%20-%20Danny's%20Diner/8_total_spend_before_membership.sql
+9. https://github.com/urmisen/OOP_Data_Structure_and_Algorithm/blob/main/SQL/Danny%20Ma's%208%20Week%20SQL%20Challenge/Case%20Study%20%231%20-%20Danny's%20Diner/9_customer_wise_points.sql
+10. https://github.com/urmisen/OOP_Data_Structure_and_Algorithm/blob/main/SQL/Danny%20Ma's%208%20Week%20SQL%20Challenge/Case%20Study%20%231%20-%20Danny's%20Diner/10_total_point_after_being_member.sql
 
 
 ## Case Stydy Link
@@ -109,11 +126,11 @@ https://8weeksqlchallenge.com/case-study-1/ </br>
 
 ## License
 
-All code in this repository is copyright 2020. All Rights Reserved.
+All code in this repository is copyright 2023. All Rights Reserved.
 
 Licensed under the MIT License. You may not use this file except in compliance with the License. Use and/or modification of this code outside of this repository must reference:
 
-© Case Study #1 - Danny's Diner
+© Case Study #1 - Danny's Diner (Author for this Solutions: Urmi Sen)
 
 ## Conclusion:
 If you like this repository and please put a star. This will keep me motivated to work more on these. 
