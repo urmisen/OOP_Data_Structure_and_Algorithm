@@ -3,7 +3,7 @@
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/urmisen/Thesis)
 [![Stars](https://img.shields.io/github/stars/urmisen/Thesis.svg?style=social)](https://github.com/urmisen/Thesis/stargazers)
 
-# Author: Urmi Sen
+# Urmi Sen
 
 Department of Computer Science & Engineering, </br>
 Rajshahi University of Engineering & Technology (RUET) </br>
@@ -13,7 +13,8 @@ Email: urmisen1202@gmail.com <br>
 <hr>
 
 ## Case Study #1 - Danny's Diner
-This study is about the Post Translational Modifications(PTM) about proteins. Here we are  trying to identify Acetylation sites in proteins, where Acetylation is a kind of Lysine Post Translational Modifications. This is the code repository of my paper entitled "DeepGlut: A Deep Learning Framework for Prediction of Glutarylation Sites in Proteins".
+Thank you Danny Ma for the excellent case study! You can find it in the link below and try it by yourself.
+* Link : https://8weeksqlchallenge.com/case-study-1/ </br>
 
 ## Challenge By : Danny Ma
 <img src="https://github.com/urmisen/OOP_Data_Structure_and_Algorithm/blob/main/SQL/Danny%20Ma's%208%20Week%20SQL%20Challenge/Case%20Study%20%231%20-%20Danny's%20Diner/case_1.PNG" alt="alt text" width="600" height="700">
@@ -118,8 +119,8 @@ I have used PostgreSQL as the programming language and these are the functions t
 
 * All Question's Solution In One Script : https://github.com/urmisen/OOP_Data_Structure_and_Algorithm/blob/main/SQL/Danny%20Ma's%208%20Week%20SQL%20Challenge/Case%20Study%20%231%20-%20Danny's%20Diner/script.sql
 
-## Case Stydy Link
-https://8weeksqlchallenge.com/case-study-1/ </br>
+## Thank You...!
+
 
 ## License
 All code in this repository is copyright 2023. All Rights Reserved.
