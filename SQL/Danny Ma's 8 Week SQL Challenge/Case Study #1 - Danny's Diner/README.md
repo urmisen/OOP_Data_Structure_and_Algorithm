@@ -5,8 +5,8 @@
 
 # Urmi Sen
 
-Department of Computer Science & Engineering, </br>
-Rajshahi University of Engineering & Technology (RUET) </br>
+Jr. Data Analyst || Shikho Technologies Bangladesh Ltd, </br>
+CSE Graduate || Rajshahi University of Engineering & Technology (RUET) </br>
 Linkedin: https://www.linkedin.com/in/urmi-sen-78a821149/ </br>
 Email: urmisen1202@gmail.com <br>
 
